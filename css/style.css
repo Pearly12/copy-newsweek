@@ -1,0 +1,198 @@
+/* * {
+  border: 1px solid red;
+} */
+
+header {
+  height: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.right-side,
+.featured-stories,
+.top-story {
+  padding-top: 15px;
+}
+
+.top-story {
+  order: -1;
+}
+
+.top-story img,
+.featured-stories img {
+  width: 100%;
+}
+
+.top-story h3,
+.featured-stories h3,
+.right-side h3 {
+  font-size: 1.2em;
+  color: darkslategrey;
+}
+
+.my-turn,
+.culture-travel {
+  display: none;
+}
+
+.site-title {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-date {
+  display: none;
+}
+
+.login-section {
+  display: flex;
+}
+
+.subscribe,
+.login,
+.nav-button {
+  padding: 0 5px;
+}
+
+header img {
+  height: 30px;
+}
+
+.subscribe {
+  background-color: yellow;
+  color: black;
+  border-radius: 5%;
+  font-weight: 600;
+}
+
+.search-input input {
+  width: 175px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#nav-1-collapse {
+  float: right;
+}
+
+.right-side {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 50px;
+  }
+
+  header img {
+    height: 50px;
+  }
+
+  .login-section {
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .weather-date {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .top-story {
+    order: 0;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  #nav-1-collapse {
+    display: block;
+  }
+
+  .right-side {
+    display: block;
+  }
+
+  .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .trending {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .trending h3 {
+    display: none;
+  }
+
+  .trending ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: darkslategrey;
+  }
+
+  .main-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .main-navigation ul li {
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+
+  .login,
+  .subscribe {
+    font-size: 1.25em;
+    margin-right: 15px;
+  }
+
+  .search-input {
+    order: 1;
+  }
+
+  header {
+    height: 95px;
+  }
+
+  header img {
+    height: 95px;
+  }
+
+  .panalist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .panalist p {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .panalist h3 {
+    font-size: 0.9em;
+    color: black;
+  }
+
+  .photo img {
+    width: 75px;
+    padding: 10px;
+  }
+}
