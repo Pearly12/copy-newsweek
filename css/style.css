@@ -1,28 +1,19 @@
-/* * {
-  border: 1px solid red;
-} */
+/* Table of Contents 
 
-header {
-  height: 30px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
+    1. Global Styles
+    2. Typography
+    3. Layout
+    4. Components
 
-.right-side,
-.featured-stories,
-.top-story {
-  padding-top: 15px;
-}
+*/
 
-.top-story {
-  order: -1;
-}
+/*  ===========
+    1. Global Styles
+    ===========*/
 
-.top-story img,
-.featured-stories img {
-  width: 100%;
-}
-
+/*  ===========
+    2. Typography
+    ===========*/
 .top-story h3,
 .featured-stories h3,
 .right-side h3 {
@@ -30,44 +21,14 @@ header {
   color: darkslategrey;
 }
 
-.my-turn,
-.culture-travel {
-  display: none;
-}
-
-.site-title {
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-}
-
-.weather-date {
-  display: none;
-}
-
-.login-section {
-  display: flex;
-}
-
-.subscribe,
-.login,
-.nav-button {
-  padding: 0 5px;
-}
-
-header img {
+/*  ===========
+    3. Layout
+    ===========*/
+/* navigation  */
+header {
   height: 30px;
-}
-
-.subscribe {
-  background-color: yellow;
-  color: black;
-  border-radius: 5%;
-  font-weight: 600;
-}
-
-.search-input input {
-  width: 175px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -81,6 +42,69 @@ nav ul {
 
 .right-side {
   display: none;
+}
+
+.weather-date {
+  display: none;
+}
+
+.login-section {
+  display: flex;
+}
+
+/* main content area  */
+.right-side,
+.featured-stories,
+.top-story {
+  padding-top: 15px;
+}
+
+.top-story {
+  order: -1;
+}
+
+.my-turn,
+.culture-travel {
+  display: none;
+}
+
+.site-title {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  ===========
+    4. Components
+    ===========*/
+
+/* images */
+
+.top-story img,
+.featured-stories img {
+  width: 100%;
+}
+
+header img {
+  height: 30px;
+}
+
+/* buttons */
+.subscribe,
+.login,
+.nav-button {
+  padding: 0 5px;
+}
+
+.subscribe {
+  background-color: yellow;
+  color: black;
+  border-radius: 5%;
+  font-weight: 600;
+}
+
+.search-input input {
+  width: 175px;
 }
 
 @media (min-width: 768px) {
@@ -98,52 +122,23 @@ nav ul {
 }
 
 @media (min-width: 992px) {
-  .weather-date {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 15px;
-  }
+  /*  ===========
+    1. Global Styles
+    ===========*/
 
-  .top-story {
-    order: 0;
-  }
-
-  .nav-button {
-    display: none;
-  }
-
-  #nav-1-collapse {
-    display: block;
-  }
-
-  .right-side {
-    display: block;
-  }
-
-  .main-navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    padding-top: 10px;
-  }
-
-  .trending {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
-
-  .trending h3 {
-    display: none;
-  }
-
+  /*  ===========
+    2. Typography
+    ===========*/
   .trending ul {
     display: flex;
     justify-content: space-around;
     font-size: 1.2em;
     font-weight: 600;
     color: darkslategrey;
+  }
+
+  .trending h3 {
+    display: none;
   }
 
   .main-navigation ul {
@@ -158,6 +153,71 @@ nav ul {
     font-size: 1.1em;
   }
 
+  .panalist p {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+  .panalist h3 {
+    font-size: 0.9em;
+    color: black;
+  }
+
+  /*  ===========
+    3. Layout
+    ===========*/
+
+  /* navigation  */
+  header {
+    height: 95px;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  #nav-1-collapse {
+    display: block;
+  }
+
+  .weather-date {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  /* main content section */
+  .trending {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .top-story {
+    order: 0;
+  }
+
+  .right-side {
+    display: block;
+  }
+
+  .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .panalist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*  ===========
+    4. Components
+    ===========*/
+
   .login,
   .subscribe {
     font-size: 1.25em;
@@ -168,27 +228,8 @@ nav ul {
     order: 1;
   }
 
-  header {
-    height: 95px;
-  }
-
   header img {
     height: 95px;
-  }
-
-  .panalist {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .panalist p {
-    font-size: 0.8em;
-    font-weight: 600;
-  }
-  .panalist h3 {
-    font-size: 0.9em;
-    color: black;
   }
 
   .photo img {
